@@ -1,6 +1,6 @@
-### Forked from https://github.com/zalando/tech-radar
 
-
+### View it online https://brightwrite.github.io/tech-radar/
+#### Forked from https://github.com/zalando/tech-radar
 
 ## Usage
 
