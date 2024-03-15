@@ -2,7 +2,7 @@
 
 <head>
 <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-<title>BrightWrite Tech Radar</title>
+<title>CoverGenius Data Tech Radar</title>
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script src="radar.js"></script>
 
@@ -23,7 +23,7 @@ radar_visualization({
     grid: "#bbb",
     inactive: "#ddd"
   },
-  title: "BrightWrite Team — 2021.05",
+  title: "Cover Genius Data Team — 2024.03",
   quadrants: [
     { name: "Languages" },
     { name: "Infrastructure" },
@@ -41,7 +41,7 @@ radar_visualization({
   //ENTRIES
   entries: [
       {
-        quadrant: 3,
+        quadrant: 1,
         ring: 0,
         label: "PostgreSQL",
         active: false,
@@ -57,7 +57,7 @@ radar_visualization({
         moved: 1
       },
       {
-        quadrant: 3,
+        quadrant: 1,
         ring: 0,
         label: "Google Cloud Storage",
         active: false,
@@ -73,7 +73,7 @@ radar_visualization({
         moved: 0
       },
       {
-        quadrant: 3,
+        quadrant: 1,
         ring: 0,
         label: "Apache Airflow",
         active: false,
@@ -83,14 +83,30 @@ radar_visualization({
       {
         quadrant: 3,
         ring: 0,
-        label: "Google Data Studio",
+        label: "DBT",
         active: false,
-        link: "../datastores/gds.html",
+        link: "../datastores/dbt.html",
         moved: 0
       },
       {
         quadrant: 3,
         ring: 0,
+        label: "BrightWrite Metrics",
+        active: true,
+        link: "../datastores/bm.html",
+        moved: 0
+      },
+      {
+        quadrant: 3,
+        ring: 3,
+        label: "Google Looker Studio",
+        active: false,
+        link: "../datastores/gds.html",
+        moved: 1
+      },
+      {
+        quadrant: 3,
+        ring: 3,
         label: "Redash",
         active: false,
         link: "../datastores/redash.html",
@@ -98,51 +114,59 @@ radar_visualization({
       },
       {
         quadrant: 3,
-        ring: 1,
-        label: "Redis",
+        ring: 0,
+        label: "Superset",
         active: false,
-        link: "../datastores/redis.html",
-        moved: 1
+        link: "../datastores/redash.html",
+        moved: 0
       },
       {
         quadrant: 3,
-        ring: 1,
+        ring: 0,
+        label: "Redis",
+        active: false,
+        link: "../datastores/redis.html",
+        moved: -1
+      },
+      {
+        quadrant: 3,
+        ring: 3,
         label: "CubeJS",
         active: false,
         link: "../datastores/cubejs.html",
         moved: 1
       },
       {
-        quadrant: 3,
-        ring: 3,
+        quadrant: 1,
+        ring: 1,
         label: "MongoDB",
         active: false,
         link: "../datastores/mongodb.html",
         moved: 1
       },
       {
-        quadrant: 3,
+        quadrant: 1,
         ring: 3,
         label: "MySQL",
         active: false,
         link: "../datastores/mysql.html",
-        moved: 0
+        moved: -1
       },
       {
-        quadrant: 3,
-        ring: 3,
+        quadrant: 1,
+        ring: 0,
         label: "Google Dataflow",
         active: false,
         link: "../datastores/gdf.html",
         moved: 0
       },
       {
-        quadrant: 3,
+        quadrant: 1,
         ring: 3,
         label: "Google Cloud Composer",
         active: false,
         link: "../datastores/gdf.html",
-        moved: 1
+        moved: -1
       },
       {
         quadrant: 2,
@@ -154,19 +178,27 @@ radar_visualization({
       },
       {
         quadrant: 2,
-        ring: 1,
-        label: "ReactJS",
+        ring: 2,
+        label: "Rust",
         active: false,
-        link: "../frameworks/reactjs.html",
+        link: "../frameworks/rust.html",
         moved: -1
       },
       {
         quadrant: 2,
-        ring: 1,
+        ring: 0,
+        label: "ReactJS",
+        active: false,
+        link: "../frameworks/reactjs.html",
+        moved: 0
+      },
+      {
+        quadrant: 2,
+        ring: 3,
         label: "SvelteJS",
         active: false,
         link: "../frameworks/reactjs.html",
-        moved: -1
+        moved: 1
       },
       {
         quadrant: 2,
@@ -178,15 +210,15 @@ radar_visualization({
       },
       {
         quadrant: 2,
-        ring: 2,
+        ring: 3,
         label: "Falcon",
         active: false,
         link: "../frameworks/falcon.html",
-        moved: -1
+        moved: 1
       },
       {
         quadrant: 2,
-        ring: 1,
+        ring: 0,
         label: "scikit-learn",
         active: false,
         link: "../frameworks/scikit_learn.html",
@@ -198,7 +230,23 @@ radar_visualization({
         label: "TensorFlow",
         active: false,
         link: "../frameworks/tensorflow.html",
-        moved: 0
+        moved: 1
+      },
+      {
+        quadrant: 2,
+        ring: 1,
+        label: "Nvidia Triton",
+        active: false,
+        link: "../frameworks/triton.html",
+        moved: -1
+      },
+      {
+        quadrant: 2,
+        ring: 0,
+        label: "PyTorch",
+        active: false,
+        link: "../frameworks/pytorch.html",
+        moved: -1
       },
       {
         quadrant: 1,
@@ -223,14 +271,6 @@ radar_visualization({
         active: false,
         link: "../infrastructure/docker.html",
         moved: 0
-      },
-      {
-        quadrant: 1,
-        ring: 3,
-        label: "Route 53",
-        active: false,
-        link: "../infrastructure/route_53.html",
-        moved: -1
       },
       {
         quadrant: 1,
@@ -262,7 +302,7 @@ radar_visualization({
         label: "Databricks",
         active: false,
         link: "../infrastructure/gcc.html",
-        moved: 0
+        moved: -1
       },
       {
         quadrant: 0,
@@ -272,14 +312,7 @@ radar_visualization({
         link: "javascript.html",
         moved: 0
       },
-      {
-        quadrant: 0,
-        ring: 0,
-        label: "OpenAPI (Swagger)",
-        active: true,
-        link: "openapi_swagger.html",
-        moved: 0
-      },
+
       {
         quadrant: 0,
         ring: 0,
@@ -290,23 +323,39 @@ radar_visualization({
       },
       {
         quadrant: 0,
-        ring: 1,
+        ring: 0,
         label: "GraphQL",
         active: true,
         link: "graphql.html",
         moved: 1
       },
       {
-        quadrant: 3,
+        quadrant: 0,
+        ring: 0,
+        label: "Typescript",
+        active: true,
+        link: "typescript.html",
+        moved: 1
+      },
+      {
+        quadrant: 1,
         ring: 3,
         label: "Kafka",
         active: false,
         link: "../queues/kafka.html",
-        moved: 0
+        moved: -1
       },
       {
-        quadrant: 3,
-        ring: 3,
+        quadrant: 1,
+        ring: 1,
+        label: "Cloud PubSub",
+        active: false,
+        link: "../queues/pubsub.html",
+        moved: 1
+      },
+      {
+        quadrant: 1,
+        ring: 0,
         label: "RabbitMQ",
         active: false,
         link: "../queues/rabbitmq.html",
@@ -339,7 +388,7 @@ The Tech Radar is a list of technologies, complemented by an assessment result, 
 
 <p>
 Please use this job ad if you are either a python software engineer or a python data engineer
-<a href="https://jobs.lever.co/covergenius/5299c8e4-b90a-4b4c-b267-9afa6fa662ad">Data Engineer / Python Software Engineer</a>
+<a href="https://jobs.lever.co/covergenius/ba823a65-cfb9-4918-ad45-d07ea9df82cf">Data Engineer / Python Software Engineer</a>
 <br />
 Please note in the "ADDITIONAL INFORMATION" field that you are coming from the tech radar page
 
